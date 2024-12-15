@@ -1,0 +1,222 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start-Nav -->
+    <nav class="navbar navbar-expand-lg py-5 pt-4 navbar-dark">
+      <div class="container-lg px-xl-5 pt-3">
+        <a class="navbar-brand ms-5 d-flex column-gap-2" href="#">
+          <img src="images/logo@2x.png" width="64" height="38" alt="logo" />
+          <div>
+            <p class="text-white fs-6 mb-0 fw-bold">Weather</p>
+            <p class="small-text mb-0">tagline goes here</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 d-flex column-gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End-Nav -->
+
+    <!-- Start-Section-One -->
+    <section id="New" class="py-5">
+      <div class="container-lg px-xl-5 py-4">
+        <div id="weathSec" class="px-5">
+          <div class="input-group position-relative">
+            <input
+              id="searchId"
+              type="text"
+              class="form-control py-3 rounded-5"
+              placeholder="Find Your Location..."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              id="findBtnId"
+              class="btn btn-outline-secondary rounded-5"
+              type="button"
+              id="button-addon2"
+            >
+              Find
+            </button>
+          </div>
+          <div class="container-fluid mt-5">
+            <div class="row g-0">
+              <div class="FirstCard col-lg-4 rounded-start-5">
+                <div class="card border-0">
+                  <div class="card-header d-flex justify-content-between">
+                    <p id="dateNameFirstDayId" class="mb-0"></p>
+                    <p id="dateNumFirstDayId" class="mb-0"></p>
+                  </div>
+                  <div class="card-body text-secondary py-4">
+                    <h5 id="CountryId" class="card-title"></h5>
+                    <div class="d-flex align-baseline column-gap-4 flex-wrap">
+                      <p id="FirstDayDegId"></p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src=""
+                          width="100"
+                          class="img-fluid"
+                          alt="cloud"
+                          id="FirstDayIcone"
+                        />
+                      </div>
+                    </div>
+                    <p id="firstDayWeatherCon" style="color: rgb(0, 154, 216)"></p>
+                    <div class="card-foot d-flex column-gap-3 flex-wrap">
+                      <div>
+                        <img
+                          src="images/icon-umberella.png"
+                          width="20"
+                          alt="icon-umberella"
+                        />
+                        20%
+                      </div>
+                      <div>
+                        <img
+                          src="images/icon-wind.png"
+                          width="20"
+                          alt="icon-wind"
+                        />
+                        18km/h
+                      </div>
+                      <div>
+                        <img
+                          src="images/icon-compass.png"
+                          width="20"
+                          alt="icon-compass"
+                        />
+                        East
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="SecondCard col-lg-4 ">
+                <div class="card border-0 rounded-0 text-center">
+                  <div class="card-header">
+                    <p id="secondDayDateId"  class="mb-0">Saturday</p>
+                  </div>
+                  <div
+                    class="card-body text-secondary py-4 d-flex flex-column justify-content-center pt-5"
+                  >
+                    <div>
+                      <img id="secondDayIcone" width="60" alt="sun" />
+                    </div>
+                    <p id="SecondDayMaxDeg" class="h3 text-white">15.3&deg;C</p>
+                    <p id="SecondDayMinDeg" class="h6 text-white">15.3&deg;C</p>
+                    <p id="SecondDayWeatherCon" style="color: rgb(0, 154, 216)">Mist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ThirdCard col-lg-4 bg-white rounded-end-3">
+                <div class="card border-0 text-center">
+                  <div class="card-header">
+                    <p id="thirdDayDateId" class="mb-0">Saturday</p>
+                  </div>
+                  <div
+                    class="card-body text-secondary py-4 d-flex flex-column justify-content-center pt-5"
+                  >
+                    <div>
+                      <img id="thirdDayIcone" src="images/113.png" width="60" alt="sun" />
+                    </div>
+                    <p id="thirdDayMaxDeg" class="h3 text-white">15.3&deg;C</p>
+                    <p id="thirdDayMinDeg" class="h6 text-white">15.3&deg;C</p>
+                    <p id="thirdDayWeatherCon" style="color: rgb(0, 154, 216)">Mist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-Section-One -->
+
+
+    <!-- Start Footer -->
+     <footer class="py-5">
+      <div class="container-lg px-xl-5 py-4">
+        <div class="px-5">
+          <div class="container-fluid">
+            <div class="row g-5">
+              <div class="col-lg-8">
+                <div class="input-group position-relative">
+                  <input
+                    id="forSearchingId"
+                    type="email"
+                    class="form-control py-3 rounded-5"
+                    placeholder="Enter Your Email to Subscribe..."
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    id="founded"
+                    class="btn btn-outline-secondary rounded-5"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+                <p class="text-white mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+              </div>
+              <div class="col-lg-3">
+                <div class="icones d-flex justify-content-center column-gap-1">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+    <!-- End Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index_js.js"></script>
+  </body>
+</html>

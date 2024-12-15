@@ -1,0 +1,194 @@
+body
+{
+    background-color: rgb(30,32,43);
+}
+
+.small-text
+{
+    font-size: 10px;
+    color: RGB(191, 193, 200);
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    border: solid 2px rgba(0,154,216, 0);
+    padding: 5px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all .2s;
+}
+
+.navbar-nav .nav-link.active
+{
+    border: solid 2px rgb(0,154,216);
+    color: rgb(0,154,216);
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link:hover
+{
+    border: solid 2px rgba(0,154,216, 1);
+    color: rgb(0,154,216) !important;
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+
+/* Start Section */
+
+#searchId
+{
+    background-color:rgb(30,32,43); 
+    border: none;
+    color: white;
+
+}
+
+#searchId::placeholder
+{
+    color: rgb(86,86,68);
+}
+
+#searchId.form-control:focus
+{
+    border: none;
+    box-shadow: none;
+}
+
+#findBtnId
+{
+    position: absolute;
+    top: 5;
+    bottom: 5;
+    right: 5;
+    font-size: 15px;
+    padding: 0px 40px;
+    background-color: rgb(0,154,216);
+    color: white;
+    z-index: 10;
+}
+
+
+#FirstDayDegId
+{
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+section
+{
+    background: url("../images/banner.png") no-repeat;
+}
+
+
+
+section .container-lg .container-fluid .row .FirstCard ,
+section .container-lg .container-fluid .row .FirstCard .card
+{
+    background-color: rgb(50,53,68) !important;
+    color: white;
+}
+
+
+section .container-lg .container-fluid .row .FirstCard .card-header
+{
+    background-color: rgb(45,48,61);
+}
+
+
+.card-header
+{
+    color: rgb(191,193,200);
+}
+
+
+
+
+
+
+
+
+
+section .container-lg .container-fluid .row .SecondCard ,
+section .container-lg .container-fluid .row .SecondCard .card
+{
+    background-color: rgb(38,41,54) !important;
+    color: white;
+}
+
+
+section .container-lg .container-fluid .row .SecondCard .card-header
+{
+    background-color: rgb(34,37,48);
+}
+
+
+
+
+
+
+
+
+section .container-lg .container-fluid .row .ThirdCard ,
+section .container-lg .container-fluid .row .ThirdCard .card
+{
+    background-color: rgb(50,53,68) !important;
+    color: white;
+}
+
+
+section .container-lg .container-fluid .row .ThirdCard .card-header
+{
+    background-color: rgb(45,48,61);
+}
+
+
+
+/* Start Footer */
+footer
+{
+    background-color: rgb(38,41,54);
+}
+
+
+#founded
+{
+    position: absolute;
+    top: 5;
+    bottom: 5;
+    right: 5;
+    font-size: 15px;
+    padding: 0px 20px;
+    background-color: rgb(0,154,216);
+    color: white;
+    z-index: 10;
+}
+
+.icones a
+{
+    color: rgb(0,154,216) !important;
+    background-color: rgb(30,32,43);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icones a:hover
+{
+    background-color: #009ad8;
+    color: white !important;
+    cursor: pointer;
+}
+/* End Footer */
+
