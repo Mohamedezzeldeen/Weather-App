@@ -34,7 +34,7 @@ var thirdDayWeatherCon = document.getElementById("thirdDayWeatherCon");
 
 var getApi = async function theApi(location ="cairo") {
   try {
-    var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`);
+    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`);
     
     if (!response.ok) {
         throw new Error('Failed to fetch data');
